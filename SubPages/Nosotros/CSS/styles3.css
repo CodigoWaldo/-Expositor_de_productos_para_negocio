@@ -1,0 +1,29 @@
+.secret {
+    margin: auto;
+}
+
+body {    
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contenedor {
+    width: 180px;
+    height: 180px;
+    background-color: #ffffff75;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contenedor img {
+    width: 150px;
+    margin: auto;
+}

@@ -1,0 +1,219 @@
+@font-face {
+	font-family: font_Ember_Lt;
+	src: url(../../../Fonts/font_Ember_Lt.ttf);
+}
+
+@font-face {
+	font-family: font_Ember_Th;
+	src: url(../../../Fonts/font_Ember_Th.ttf);
+}
+
+
+/* ----------- BODY & BG ----------- */
+body {
+	background-color: #ebebeb;
+	font-family: font_Ember_Lt, tahoma;
+	display: flex;
+	flex-direction: column;
+}
+
+/* ----------- Wrapper ----------- */
+
+.wrap {
+	max-width: 1500px;
+	width: 90%;
+	margin: auto;
+}
+
+.wrap>h1 {
+	color: #494B4D;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 15px 0px;
+}
+
+.wrap>h1:after {
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #C7C7C7;
+	margin: 20px 0;
+}
+
+.store-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* ----------- LISTA ITEMS ----------- */
+
+.category_list {
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+	height: 405px;
+	background: #ffffff90;
+	border-radius: 10px;
+	backdrop-filter: blur(5px);
+}
+
+.category_list .category_item {
+	display: inline-block;
+	width: 80%;
+	padding: 10px 0;
+	background: rgba(44, 44, 44, 0.5);
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 3px 3px #373c3c;
+	backdrop-filter: blur(5px);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+
+.category_list .category_item:hover {
+	transition: all .3s;
+	;
+	transform: translateY(-5px);
+	box-shadow: 0px 6px 8px #373c3c;
+
+}
+
+.category_list .ct_item-active {
+	background: RED;
+	box-shadow: 0px 0px 0px;
+}
+
+
+/* ----------- PRODUCTOS ----------- */
+
+.products-list {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.products-list .product-item {
+	width: 22.6%;
+	margin-left: 3%;
+	margin-bottom: 25px;
+	font-family: font_Ember_Lt;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+	transition: all .4s;
+	background: #ffffff90;
+	backdrop-filter: blur(5px);
+}
+
+.products-list .product-item:hover {
+	box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.products-list .product-item img {
+	width: 100%;
+}
+
+.products-list .product-item h1 {
+	display: block;
+	width: 100%;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+.products-list .product-item h2 {
+	display: block;
+	width: 100%;
+	font-size: 20px;
+	color: #00a650;
+	font-family: font_Ember_Th;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.products-list .product-item p {
+	display: block;
+	width: 100%;
+	color: #646464;
+	margin-top: 0px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+/* ----------- COSAS PARA HACERLO RESPONSIVO ----------- */
+
+@media screen and (max-width: 1100px) {
+	.products-list .product-item {
+		width: 30.3%;
+	}
+}
+
+@media screen and (max-width: 985px) {
+
+	.category_list,
+	.products-list {
+		width: 100%;
+	}
+
+	.category_list {
+		flex-direction: row;
+		justify-content: space-between;
+		height: 70px;
+		margin-bottom: 30px;
+	}
+
+	.category_list .category_item {
+		align-self: flex-start;
+		width: 20%;
+		margin: auto;
+	}
+
+	.products-list .product-item {
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1) {
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.category_list {
+		flex-direction: column;
+		width: 80%;
+		height: 405px;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: flex-start;
+	}
+
+	.category_list .category_item {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 15px;
+		margin-bottom: 0px;
+	}
+
+	.products-list {
+		justify-content: center;
+	}
+
+	.products-list .product-item:nth-child(3n+1) {
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item {
+		margin-left: 4.5%;
+		width: 270px;
+	}
+}

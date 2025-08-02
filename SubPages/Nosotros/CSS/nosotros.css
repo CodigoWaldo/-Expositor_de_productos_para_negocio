@@ -1,0 +1,146 @@
+@font-face {
+    font-family: font_Ember_Lt;
+    src: url(../../../Fonts/font_Ember_Lt.ttf);
+}
+
+@font-face {
+    font-family: font_Ember_Th;
+    src: url(../../../Fonts/font_Ember_Th.ttf);
+}
+
+/* ----------- BODY & BG ----------- */
+
+body {
+    background-color: #ebebeb;
+    font-family: font_Ember_Lt, tahoma;
+    display: flex;
+    flex-direction: column;
+}  
+
+/* ----------- ENCABEZADO ------*/
+
+header {
+    margin: auto;
+}
+
+.navegacion {
+    margin: 30px;    
+    display: flex;
+    flex-direction: column;    
+    max-width: 1000px;
+    background: #ffffff90;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.navegacion img {
+    width: 100px;
+    margin: auto;    
+}
+
+.menu {
+    display: block;
+    text-align: center;
+    padding-left: 0px;
+}
+
+/* botones */
+.button {
+    background: rgba(44, 44, 44, 0.5);
+    color: white;
+    display: inline-block;
+    font-size: 1.25em;
+    margin: 10px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    box-shadow: 0px 3px 3px #373c3c;
+    border-radius: 10px;
+}
+
+.button:hover {
+    transition: all .3s;
+    background-color: RED;
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px #373c3c;
+
+}
+
+/*----------*/
+.contenedor img {
+    width: 150px;
+    margin: auto;
+}
+
+.secret {
+    margin: auto;
+}
+
+.contenedorPadre{
+    margin: auto; 
+    height: auto;
+    display: flex;
+    flex-direction:column;    
+    max-width: 894px;
+    background: #ffffff90;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+.contenedorHijo1{
+    margin: auto; 
+    height: auto;
+    display: flex;
+    flex-direction:row;    
+    max-width: 894px;   
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+
+.contenedorImagenes {
+    margin-top: 50px;
+	width: 300PX;
+	margin-left: auto;
+	margin-bottom: 25px;
+	font-family: font_Ember_Lt;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;	
+	
+}   
+.contenedorPadre h1{
+    margin: auto;
+    margin-top: 20px;
+    font-family: font_Ember_Th;
+}
+
+.contenedorImagenes a{
+    text-decoration: none;
+    font-family: font_Ember_Lt, tahoma;
+    
+}
+
+.contenedorImagenes img{
+    width: 200px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.contenedorTexto{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: font_Ember_Lt, tahoma;
+    text-align: justify;
+    font-size: 18px;
+    color: #646464;
+}
+
+/* ----------- COSAS PARA HACERLO RESPONSIVO ----------- */
+@media screen and (max-width: 600px) {
+	.contenedorHijo1 {
+        flex-direction: column;
+    }
+}
+
