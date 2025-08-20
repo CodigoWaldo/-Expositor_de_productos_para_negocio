@@ -1,5 +1,6 @@
 # 📌 Sitio web expositor de productos para un negocio.
 
+![imagen del sitio](Images/github.png)
 ---
 
 ## 📝 Descripción
